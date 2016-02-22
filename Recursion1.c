@@ -10,8 +10,8 @@ int main(){
     printf("Fac=%d",f);
 }
 int sum(int n){
-    if(n==0)
-       return n;
+    if(n<=1)
+       return 1;
     else
-       return n+sum(n-1);    /*self call  to function sum() */
+       return n*sum(n-1);    /*self call  to function sum() */
 }
