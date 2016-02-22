@@ -9,9 +9,9 @@ int main(){
     f=fac(n);
     printf("Fac=%d",f);
 }
-int sum(int n){
+int fac(int n){
     if(n<=1)
        return 1;
     else
-       return n*sum(n-1);    /*self call  to function sum() */
+       return n*fac(n-1);    /*self call  to function sum() */
 }
